@@ -1,0 +1,56 @@
+main {
+    padding: calc_rem(20) 0;
+    background-color: rgba($color: #ddd, $alpha: 0.5);
+
+    & > .content {
+        background-color: white;
+        box-shadow: 0 0 3px rgba($color: #ddd, $alpha: 0.7);
+    }
+}
+
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+.content {
+    padding: 0 calc_rem(15);
+    margin: 0 auto;
+    max-width: calc_rem(1300);
+}
+
+// ._hidden {
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+// ._shown {
+//     opacity: 1;
+//     visibility: visible;
+// }
+
+// ._scroll-lock {
+//     overflow-y: hidden;
+// }
+
+.description {
+    padding-top: calc_rem(10);
+    margin-bottom: calc_rem(20);
+}
+
+.title {
+    margin-bottom: calc_rem(10);
+    text-align: center;
+    font-weight: 700;
+    font-size: calc_rem(24);
+}
+
+.paragraph {
+    margin-bottom: calc_rem(10);
+    text-align: justify;
+    font-size: calc_rem(18);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
